@@ -2,7 +2,7 @@
     "name": "hashname",
     "displayName": "hashName",
     "description": "重命名图片为自身MD5-HASH",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "icon": "icon.png",
     "publisher": "174171262@qq.com",
     "engines": {

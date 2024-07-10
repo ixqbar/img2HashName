@@ -40,7 +40,8 @@ export function activate(context: vscode.ExtensionContext) {
 						vscode.window.showErrorMessage(`重命名失败: ${err.message}`)
 					} else {
 						if (currentExplorerPath !== null) {
-							let relative_path = path.relative(currentExplorerPath, uri.fsPath)
+							let relative_path = path.relative(currentExplorerPath, newFilePath)
+							console.log(relative_path)
 							writeTextToClipboard(relative_path)
 						} else {
 							vscode.window.showInformationMessage(`获取相对路径失败`)
